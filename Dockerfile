@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:latest
 LABEL maintainer="admin@qi2.info"
 
 # Alpine setup
