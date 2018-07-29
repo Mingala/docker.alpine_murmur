@@ -1,4 +1,4 @@
-# docker.alpine.murmur
+# docker.alpine_murmur
 Docker image for Murmur server based on Alpine package
 
 Volumes to map on Docker:
