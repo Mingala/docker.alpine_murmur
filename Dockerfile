@@ -15,9 +15,9 @@ RUN apk add --update-cache murmur~${version_app}
 EXPOSE 64738/tcp 64738/udp
 
 # run Murmur
-# init file (to map) /etc/murmur.ini
-# database (to map) /var/lib/murmur/murmur.sqlite
-VOLUME ["/var/lib/murmur"]
+# init file (bind mount file) /etc/murmur.ini
+# database (bind mount folder) /var/lib/murmur/murmur.sqlite
+# crts (according to ini file, bind mount folder) /var/lib/murmur/
 USER murmur
 ENTRYPOINT ["/usr/bin/murmurd", "-fg", "-v"]
 CMD ["-ini", "/etc/murmur.ini"]
