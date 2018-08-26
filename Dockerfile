@@ -19,5 +19,4 @@ EXPOSE 64738/tcp 64738/udp
 # database (bind mount folder) /var/lib/murmur/murmur.sqlite
 # crts (according to ini file, bind mount folder) /var/lib/murmur/
 USER murmur
-ENTRYPOINT ["/usr/bin/murmurd", "-fg", "-v"]
-CMD ["-ini", "/etc/murmur.ini"]
+ENTRYPOINT ["/usr/bin/murmurd", "-ini", "/etc/murmur.ini"]
