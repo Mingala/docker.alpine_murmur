@@ -1,11 +1,11 @@
 # base version targeted
-ARG version_base=3.15
+ARG version_base=edge
 # Alpine base
 FROM alpine:$version_base
 LABEL maintainer="admin@qi2.info"
 
 # app version targeted
-ENV version_app=1.3.4
+ENV version_app=1.4.230
 # Alpine setup
 # install latest Murmur Alpine package
 RUN apk add --no-cache murmur~${version_app}
